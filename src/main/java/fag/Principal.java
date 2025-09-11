@@ -10,17 +10,18 @@ public class Principal {
 		System.out.println("=== ATIVIDADE JAVA BÁSICO - 10 QUESTÕES ===\n");
 		
 		// Executar todas as questões
-		questao1_Scanner(scan);
-		questao2_Print();
-		questao3_For();
-		questao4_If(scan);
-		questao5_While(scan);
-		questao6_Metodos();
-		questao7_ScannerIf(scan);
-		questao8_ForPrint();
-		questao9_WhileScanner(scan);
-		questao10_MetodosFor();
+	//	questao1_Scanner(scan);
 		
+	//	questao2_Print();
+	//	questao3_For();
+	questao4_If(scan);
+//		questao5_While(scan);
+//		questao6_Metodos();
+//		questao7_ScannerIf(scan);
+//		questao8_ForPrint();
+//		questao9_WhileScanner(scan);
+//		questao10_MetodosFor();
+//		
 		scan.close();
 	}
 	
@@ -31,8 +32,13 @@ public class Principal {
 	// e exiba uma mensagem de boas-vindas personalizada
 	// Exemplo: "Olá João! Você tem 20 anos. Seja bem-vindo(a)!"
 	public static void questao1_Scanner(Scanner scan) {
+		System.out.println("qual o seu nome");
+		String nome = scan.nextLine();
+		System.out.println("qual a sua idade");
+		int idade = scan.nextInt();
+		System.out.printf("Olá %s! Você tem %d anos. Seja bem-vindo(a)!", nome, idade);
 		
-	}
+	} 
 	
 	// ========================================
 	// QUESTÃO 2 - PRINT (Saída de Dados)
@@ -43,6 +49,13 @@ public class Principal {
 	public static void questao2_Print() {
 		System.out.println("=== QUESTÃO 2 - PRINT ===");
 		// SEU CÓDIGO AQUI
+		
+		int numero = 5; 
+		System.out.println("== Tabuada do" + numero + "==" );
+		for (int i = 1; i <=10; i++)
+		{System.out.printf("%d x %2d = %d%n", numero, i, (numero * i));
+		
+		}
 		
 	}
 	
@@ -56,7 +69,17 @@ public class Principal {
 		System.out.println("=== QUESTÃO 3 - FOR ===");
 		// SEU CÓDIGO AQUI
 		
-		System.out.println();
+		int soma = 0;
+		int numero = 1;
+		System.out.println(" soma dos numeros de 1 até 100");
+		for (int i = 1; i <=100; i++){
+			soma += i;
+		
+		System.out.printf("%d + %2d = %d%n", numero, i, (numero * i));
+	
+		System.out.printf("a soma dos numeros de 1 ate 100 é:" + soma);
+	
+		}
 	}
 	
 	// ========================================
