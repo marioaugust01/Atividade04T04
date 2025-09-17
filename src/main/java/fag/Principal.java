@@ -265,14 +265,14 @@ public class Principal {
 	// ========================================
 	// TODO: Implemente este método para calcular o fatorial de um número
 	// Use um laço for para fazer o cálculo
-	
+	public static long calcularFatorial(int n) {
 		// SEU CÓDIGO AQUI
 		
-		public static long calcularFatorial(int num) {
+		
 
 		    long fat = 1;
 		    
-		    for (int i = 1; i <= num; i++) {
+		    for (int i = 1; i <= n; i++) {
 		        fat *= i;
 		    }
 		    return fat;
